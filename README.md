@@ -24,7 +24,7 @@ cd qa-auto-engineer-java-project-71
 
 Пример работы утилиты `gendiff`:
 
-[![asciicast](https://asciinema.org/a/b1zVrBWhtFTolxAS)](https://asciinema.org/a/b1zVrBWhtFTolxAS)
+[![asciicast](https://asciinema.org/a/b1zVrBWhtFTolxAS.svg)](https://asciinema.org/a/b1zVrBWhtFTolxAS)
 
 ---
 
