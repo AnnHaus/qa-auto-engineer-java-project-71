@@ -22,7 +22,9 @@ cd qa-auto-engineer-java-project-71
 
 ## Использование
 
-<!-- Добавьте примеры запуска и запись asciinema — именно это смотрит работодатель -->
+Пример работы утилиты `gendiff`:
+
+[![asciicast](https://asciinema.org/a/b1zVrBWhtFTolxAS)](https://asciinema.org/a/b1zVrBWhtFTolxAS)
 
 ---
 
