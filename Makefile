@@ -1,19 +1,19 @@
 .PHONY: build
 
 setup:
-	./gradlew wrapper --gradle-version 9.3.0
+	cd app && ./gradlew wrapper --gradle-version 9.3.0
 
 clean:
-	./gradlew clean
+	cd app && ./gradlew clean
 
 build:
-	./gradlew clean build
+	cd app && ./gradlew clean build
 
 run-dist:
-	./build/install/java-project-71/bin/java-project-71
+	cd app && ./build/install/app/bin/app
 
 test:
-	./gradlew test
+	cd app && ./gradlew test
 
 report:
-	./gradlew jacocoTestReport
+	cd app && ./gradlew jacocoTestReport
