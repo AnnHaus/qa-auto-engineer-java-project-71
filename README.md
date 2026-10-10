@@ -24,7 +24,7 @@ cd qa-auto-engineer-java-project-71
 
 Пример работы утилиты `gendiff`:
 
-[▶ Посмотреть финальную демонстрацию работы всех форматов в Asciinema](https://asciinema.org/a/RRgDeGR3vCD7lLHF)
+[▶ Посмотреть финальную демонстрацию работы всех форматов в Asciinema](https://asciinema.org/a/bPe8RgI5vLGSc4HH)
 
 
 ---
