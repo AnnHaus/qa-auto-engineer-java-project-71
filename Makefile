@@ -10,7 +10,7 @@ build:
 	./gradlew clean build
 
 run-dist:
-	./build/install/app/bin/app
+	./build/install/java-project-71/bin/java-project-71
 
 test:
 	./gradlew test
