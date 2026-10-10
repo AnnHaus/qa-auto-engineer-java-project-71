@@ -46,4 +46,16 @@ public class DifferTest {
     String actual = Differ.generate(path1, path2, "plain").replaceAll("\\R", "\n").trim();
     assertThat(actual).isEqualToNormalizingNewlines(expectedPlain);
   }
+
+  @ParameterizedTest
+  @ValueSource(strings = {"json", "yml"})
+  public void testGenerateJson(String format) throws Exception {
+    String path1 = getFixturePath("file1." + format).toString();
+    String path2 = getFixturePath("file2." + format).toString();
+
+    String actual = Differ.generate(path1, path2, "json").trim();
+
+    assertThat(actual).startsWith("{").endsWith("}");
+    assertThat(actual).contains("\"type\"").contains("setting1");
+  }
 }
