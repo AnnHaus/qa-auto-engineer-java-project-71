@@ -6,6 +6,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
@@ -54,8 +55,16 @@ public class DifferTest {
     String path2 = getFixturePath("file2." + format).toString();
 
     String actual = Differ.generate(path1, path2, "json").trim();
-
     assertThat(actual).startsWith("{").endsWith("}");
     assertThat(actual).contains("\"type\"").contains("setting1");
+  }
+
+  @Test
+  public void testWithEmptyFile() throws Exception {
+    String path1 = getFixturePath("empty.json").toString();
+    String path2 = getFixturePath("file2.json").toString();
+
+    String actual = Differ.generate(path1, path2, "stylish").trim();
+    assertThat(actual).startsWith("{").endsWith("}");
   }
 }
